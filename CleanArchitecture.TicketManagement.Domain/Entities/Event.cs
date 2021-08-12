@@ -1,7 +1,5 @@
 ﻿using CleanArchitecture.TicketManagement.Domain.Common;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CleanArchitecture.TicketManagement.Domain.Entities
 {
@@ -21,7 +19,7 @@ namespace CleanArchitecture.TicketManagement.Domain.Entities
 
         public DateTime StartDate { get; set; }
 
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         public Category Category { get; set; }
     }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchitecture.TicketManagement.Application.Contracts.Persistence
@@ -9,16 +8,16 @@ namespace CleanArchitecture.TicketManagement.Application.Contracts.Persistence
     {
         Task<TEntity> GetByIdAsync(Guid id);
 
-        Task<IReadOnlyList<TEntity>> GetPagedReponseAsync(int page, int size, string orderBy);
+        Task<IReadOnlyList<TEntity>> GetPagedReponseAsync(int page, int size);
 
         Task<IReadOnlyList<TEntity>> ListAllAsync();
 
         Task AddAsync(TEntity entity);
 
-        Task UpdateAsync(TEntity entity);
+        void UpdateAsync(TEntity entity);
 
-        Task DeleteAsync(TEntity entity);
+        void DeleteAsync(TEntity entity);
 
-        Task<bool> SaveChangesAsync();
+        Task<int> SaveChangesAsync();
     }
 }

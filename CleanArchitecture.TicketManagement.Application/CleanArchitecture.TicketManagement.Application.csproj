@@ -12,4 +12,8 @@
     <Folder Include="Profiles\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.TicketManagement.Domain\CleanArchitecture.TicketManagement.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
